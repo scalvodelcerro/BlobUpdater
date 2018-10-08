@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class FormPrincipal
   Inherits System.Windows.Forms.Form
 
   'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,9 +22,28 @@ Partial Class Form1
   'No lo modifique con el editor de código.
   <System.Diagnostics.DebuggerStepThrough()> _
   Private Sub InitializeComponent()
-    components = New System.ComponentModel.Container()
+    Me.ListBoxLog = New System.Windows.Forms.ListBox()
+    Me.SuspendLayout()
+    '
+    'ListBox1
+    '
+    Me.ListBoxLog.FormattingEnabled = True
+    Me.ListBoxLog.Location = New System.Drawing.Point(12, 12)
+    Me.ListBoxLog.Name = "ListBox1"
+    Me.ListBoxLog.Size = New System.Drawing.Size(260, 160)
+    Me.ListBoxLog.TabIndex = 0
+    '
+    'Form1
+    '
+    Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
     Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+    Me.ClientSize = New System.Drawing.Size(284, 261)
+    Me.Controls.Add(Me.ListBoxLog)
+    Me.Name = "Form1"
     Me.Text = "Form1"
+    Me.ResumeLayout(False)
+
   End Sub
 
+  Friend WithEvents ListBoxLog As ListBox
 End Class
