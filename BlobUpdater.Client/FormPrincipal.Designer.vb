@@ -25,21 +25,24 @@ Partial Class FormPrincipal
     Me.ListBoxLog = New System.Windows.Forms.ListBox()
     Me.SuspendLayout()
     '
-    'ListBox1
+    'ListBoxLog
     '
+    Me.ListBoxLog.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
     Me.ListBoxLog.FormattingEnabled = True
     Me.ListBoxLog.Location = New System.Drawing.Point(12, 12)
-    Me.ListBoxLog.Name = "ListBox1"
-    Me.ListBoxLog.Size = New System.Drawing.Size(260, 160)
+    Me.ListBoxLog.Name = "ListBoxLog"
+    Me.ListBoxLog.Size = New System.Drawing.Size(471, 251)
     Me.ListBoxLog.TabIndex = 0
     '
-    'Form1
+    'FormPrincipal
     '
     Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
     Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-    Me.ClientSize = New System.Drawing.Size(284, 261)
+    Me.ClientSize = New System.Drawing.Size(495, 276)
     Me.Controls.Add(Me.ListBoxLog)
-    Me.Name = "Form1"
+    Me.Name = "FormPrincipal"
     Me.Text = "Form1"
     Me.ResumeLayout(False)
 
