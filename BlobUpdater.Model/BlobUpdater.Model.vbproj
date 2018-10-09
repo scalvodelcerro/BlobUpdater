@@ -159,9 +159,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActualizacionManager.vb" />
-    <Compile Include="Class1.vb" />
     <Compile Include="EF\BlobUpdaterContext.vb" />
     <Compile Include="Entity\Actualizacion.vb" />
+    <Compile Include="Entity\Aplicacion.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -177,7 +177,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Naming\Constants.vb" />
     <Compile Include="Repository\ActualizacionRepository.vb" />
+    <Compile Include="Repository\AplicacionRepository.vb" />
+    <Compile Include="Repository\IActualizacionRepository.vb" />
+    <Compile Include="Repository\IAplicacionRepository.vb" />
+    <Compile Include="Service\ConsoleLogger.vb" />
     <Compile Include="Service\ILoggingService.vb" />
   </ItemGroup>
   <ItemGroup>

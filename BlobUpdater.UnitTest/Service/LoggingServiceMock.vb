@@ -1,9 +1,11 @@
 ﻿Imports BlobUpdater.Model
 
-Friend Class ConsoleLogger
+Public Class LoggingServiceMock
   Implements ILoggingService
 
+  Public Property Messages As List(Of String) = New List(Of String)()
+
   Public Sub Log(message As String) Implements ILoggingService.Log
-    Console.WriteLine(message)
+    Messages.Add(message)
   End Sub
 End Class

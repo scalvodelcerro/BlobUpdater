@@ -6,6 +6,7 @@ Public Class BlobUpdaterContext
   Inherits DbContext
 
   Public Property Actualizaciones As DbSet(Of Actualizacion)
+  Public Property Aplicaciones As DbSet(Of Aplicacion)
 
   Public Sub New()
     MyBase.New()
@@ -16,6 +17,7 @@ Public Class BlobUpdaterContext
 
   Protected Overrides Sub OnModelCreating(builder As DbModelBuilder)
     Dim entity As ModelConfiguration.EntityTypeConfiguration(Of Actualizacion) = builder.Entity(Of Actualizacion)
+    Dim entityAplicacion As ModelConfiguration.EntityTypeConfiguration(Of Aplicacion) = builder.Entity(Of Aplicacion)
     entity.
       ToTable("adge_app_update").
       HasKey(Function(p) New With {p.Aplicacion, p.Version})
@@ -27,6 +29,13 @@ Public Class BlobUpdaterContext
       HasColumnName("CDVERSION")
     entity.Property(Function(p) p.Contenido).
       HasColumnName("FILE_BLOB")
+
+    entityAplicacion.
+      ToTable("adge_aplicaciones").
+      HasKey(Function(p) p.Nombre)
+    entityAplicacion.Property(Function(p) p.Nombre).
+      HasColumnName("CDAPLIC")
+
   End Sub
 
 End Class
