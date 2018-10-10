@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormActualizacion
   Inherits System.Windows.Forms.Form
 
   'Form reemplaza a Dispose para limpiar la lista de componentes.
-  <System.Diagnostics.DebuggerNonUserCode()> _
+  <System.Diagnostics.DebuggerNonUserCode()>
   Protected Overrides Sub Dispose(ByVal disposing As Boolean)
     Try
       If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FormActualizacion
   'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
   'Se puede modificar usando el Diseñador de Windows Forms.  
   'No lo modifique con el editor de código.
-  <System.Diagnostics.DebuggerStepThrough()> _
+  <System.Diagnostics.DebuggerStepThrough()>
   Private Sub InitializeComponent()
     Me.components = New System.ComponentModel.Container()
     Me.TbFichero = New System.Windows.Forms.TextBox()
@@ -33,7 +33,6 @@ Partial Class FormActualizacion
     Me.FileDialog = New System.Windows.Forms.OpenFileDialog()
     Me.CbAplicacion = New System.Windows.Forms.ComboBox()
     Me.AplicacionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-    Me.LblAppVersion = New System.Windows.Forms.Label()
     CType(Me.AplicacionBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
     Me.SuspendLayout()
     '
@@ -122,22 +121,11 @@ Partial Class FormActualizacion
     Me.AplicacionBindingSource.DataSource = GetType(BlobUpdater.Model.Aplicacion)
     Me.AplicacionBindingSource.Sort = "Nombre"
     '
-    'LblAppVersion
-    '
-    Me.LblAppVersion.AutoSize = True
-    Me.LblAppVersion.Location = New System.Drawing.Point(12, 114)
-    Me.LblAppVersion.Name = "LblAppVersion"
-    Me.LblAppVersion.Size = New System.Drawing.Size(62, 13)
-    Me.LblAppVersion.TabIndex = 9
-    Me.LblAppVersion.Text = "Versión: {0}"
-    Me.LblAppVersion.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-    '
     'FormActualizacion
     '
     Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
     Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
     Me.ClientSize = New System.Drawing.Size(415, 136)
-    Me.Controls.Add(Me.LblAppVersion)
     Me.Controls.Add(Me.CbAplicacion)
     Me.Controls.Add(Me.BtnExplorar)
     Me.Controls.Add(Me.BtnGuardar)
@@ -166,5 +154,4 @@ Partial Class FormActualizacion
   Friend WithEvents FileDialog As OpenFileDialog
   Friend WithEvents CbAplicacion As ComboBox
   Friend WithEvents AplicacionBindingSource As BindingSource
-  Friend WithEvents LblAppVersion As Label
 End Class

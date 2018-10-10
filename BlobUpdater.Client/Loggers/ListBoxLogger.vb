@@ -9,7 +9,13 @@ Friend Class ListBoxLogger
     Me.listBox = listBox
   End Sub
 
+  Delegate Sub LogCallback(message As String)
   Public Sub Log(message As String) Implements ILoggingService.Log
-    listBox.Items.Add(message)
+    If listBox.InvokeRequired Then
+      listBox.Invoke(New LogCallback(AddressOf Log), {message})
+    Else
+      listBox.Items.Add(message)
+    End If
+
   End Sub
 End Class

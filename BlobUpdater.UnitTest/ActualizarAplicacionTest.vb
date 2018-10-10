@@ -11,7 +11,7 @@ Imports Microsoft.VisualStudio.TestTools.UnitTesting
     Dim tested As ActualizacionManager =
       New ActualizacionManager(repo, log)
     'When
-    tested.ActualizarAplicacion("whatever")
+    tested.ActualizarAplicacion("whatever", "whatever")
 
     'Then
     Assert.AreEqual(1, log.Messages.Count)
