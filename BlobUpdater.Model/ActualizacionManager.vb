@@ -13,7 +13,7 @@ Public Class ActualizacionManager
 
   Public Function HayActualizaciones(nombreAplicacion As String, version As String)
     Dim actualizacion As Actualizacion = repo.ObtenerUltimaActualizacion(nombreAplicacion)
-    Return actualizacion.Version <> version
+    Return actualizacion IsNot Nothing AndAlso actualizacion.Version <> version
   End Function
 
   Public Sub ActualizarAplicacion(nombreAplicacion As String, rutaAplicacion As String)

@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BlobUpdater.DownloaderClient", "BlobUpdater.Client\BlobUpdater.DownloaderClient.vbproj", "{11526DAF-AA27-442A-A15D-9A5467AD94D7}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BlobUpdater.DownloaderClient", "BlobUpdater.DownloaderClient\BlobUpdater.DownloaderClient.vbproj", "{11526DAF-AA27-442A-A15D-9A5467AD94D7}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BlobUpdater.Model", "BlobUpdater.Model\BlobUpdater.Model.vbproj", "{E8612B1D-39CE-4890-BDF7-D5AC15A8D0C9}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BlobUpdater.UnitTest", "BlobUpdater.UnitTest\BlobUpdater.UnitTest.vbproj", "{01A1E2A8-1E0F-44EB-A372-57BEEA7EF043}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BlobUpdater.UploaderClient", "BlobUpdater.UploaderClient\BlobUpdater.UploaderClient.vbproj", "{0A4B4A8D-3CD6-40BB-BE0A-82E689E6ED86}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BlobUpdater.ExampleClient", "BlobUpdater.ExampleClient\BlobUpdater.ExampleClient.vbproj", "{B478CA7C-AC72-48B5-8DB0-DE2E3E85B296}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{0A4B4A8D-3CD6-40BB-BE0A-82E689E6ED86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A4B4A8D-3CD6-40BB-BE0A-82E689E6ED86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A4B4A8D-3CD6-40BB-BE0A-82E689E6ED86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B478CA7C-AC72-48B5-8DB0-DE2E3E85B296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B478CA7C-AC72-48B5-8DB0-DE2E3E85B296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B478CA7C-AC72-48B5-8DB0-DE2E3E85B296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B478CA7C-AC72-48B5-8DB0-DE2E3E85B296}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
